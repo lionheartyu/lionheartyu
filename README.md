@@ -1,5 +1,9 @@
 ## Hi there 👋
+# Hi, I'm DongShengYuan
 
+## GitHub Stats
+
+![GitHub Stats](https://github-stats-extended.vercel.app/api?username=lionheartyu&show_icons=true&include_all_commits=true&show=prs_merged,prs_merged_percentage&hide=stars,issues,contribs&hide_rank=true&number_format=long&locale=cn&theme=transparent)
 <!--
 **lionheartyu/lionheartyu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

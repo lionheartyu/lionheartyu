@@ -24,15 +24,6 @@
   />
 </p>
 
-## Activity
-
-<p align="center">
-  <img
-    width="100%"
-    src="https://github-readme-activity-graph.vercel.app/graph?username=lionheartyu&theme=tokyo-night&hide_border=true&radius=8&area=true&custom_title=Contribution%20Graph"
-    alt="GitHub Activity Graph"
-  />
-</p>
 </div>
 <!--
 **lionheartyu/lionheartyu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

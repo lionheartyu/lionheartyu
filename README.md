@@ -6,22 +6,6 @@
 
 <br />
 
-<p align="center">
-  <b>systemd contributions</b>
-</p>
-
-<p align="center">
-  <a href="https://github.com/systemd/systemd/pulls?q=is%3Apr+is%3Amerged+author%3Alionheartyu">
-    <img src="https://img.shields.io/github/issues-search/systemd/systemd?query=is%3Apr%20is%3Amerged%20author%3Alionheartyu&label=Merged%20PRs&style=flat&logo=github&logoColor=58A6FF&labelColor=0D1117&color=0D1117&cacheSeconds=3600" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/search?q=repo%3Asystemd%2Fsystemd+author%3Alionheartyu&type=commits">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fcommits%3Fq%3Drepo%253Asystemd%252Fsystemd%2520author%253Alionheartyu&query=%24.total_count&label=Commits&style=flat&logo=git&logoColor=58A6FF&labelColor=0D1117&color=0D1117&cacheSeconds=3600" />
-  </a>
-</p>
-
-<br />
-
 <img width="49%" src="https://github-stats-extended.vercel.app/api?username=lionheartyu&show_icons=true&include_all_commits=true&show=prs_merged,prs_merged_percentage&hide=stars,issues,contribs&hide_rank=true&number_format=long&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&custom_title=PRs%20%26%20Commits&v=20260727" />
 <img width="49%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=lionheartyu&layout=compact&langs_count=8&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&custom_title=Top%20Languages&v=20260727" />
 

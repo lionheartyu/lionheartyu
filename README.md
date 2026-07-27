@@ -10,15 +10,11 @@
 
 <br />
 
-### systemd Contributions
-<p align="center">
-  <a href="https://github.com/systemd/systemd/pulls?q=is%3Apr+is%3Amerged+author%3Alionheartyu">
-    <img src="https://img.shields.io/github/issues-search/systemd/systemd?query=is%3Apr%20is%3Amerged%20author%3Alionheartyu&label=systemd%20merged%20PRs&style=for-the-badge&logo=github&color=1f6feb&labelColor=0d1117&cacheSeconds=3600" />
-  </a>
-  <a href="https://github.com/search?q=repo%3Asystemd%2Fsystemd+author%3Alionheartyu&type=commits">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fcommits%3Fq%3Drepo%253Asystemd%252Fsystemd%2520author%253Alionheartyu&query=%24.total_count&label=systemd%20commits&style=for-the-badge&logo=git&color=238636&labelColor=0d1117&cacheSeconds=3600" />
-  </a>
-</p>
+<a href="https://github.com/systemd/systemd/pulls?q=is%3Apr+is%3Amerged+author%3Alionheartyu">
+  <img width="98%" src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=120&section=header&text=systemd%20Contributions&fontSize=26&fontColor=58A6FF&desc=62%20Merged%20PRs%20%20%7C%20%20110%20Commits&descSize=18&descAlignY=68" />
+</a>
+
+<br />
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1F6FEB,100:0D1117&height=80&section=footer" />
 

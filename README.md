@@ -2,16 +2,14 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:1F6FEB&height=180&section=header&text=DongShengYuan&fontSize=42&fontColor=FFFFFF&animation=fadeIn&fontAlignY=36&desc=Open%20Source%20Contributor&descSize=16&descAlignY=58" />
 
-<img width="49%" src="https://github-stats-extended.vercel.app/api?username=lionheartyu&show_icons=true&include_all_commits=true&show=prs_merged,prs_merged_percentage&hide=stars,issues,contribs&hide_rank=true&number_format=long&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&custom_title=PRs%20%26%20Commits&v=20260727" />
-<img width="49%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=lionheartyu&layout=compact&langs_count=8&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&custom_title=Top%20Languages&v=20260727" />
+<img width="49%" src="./assets/github-stats.svg" />
+<img width="49%" src="./assets/top-langs.svg" />
 
 <br />
-<br />
-
 <br />
 
 <a href="https://github.com/systemd/systemd/pulls?q=is%3Apr+is%3Amerged+author%3Alionheartyu">
-  <img width="98%" src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=120&section=header&text=systemd%20Contributions&fontSize=26&fontColor=58A6FF&desc=Merged%20PRs%3A%2062%20%20%7C%20%20Commits%3A%20110&descSize=18&descAlignY=68&descColor=C9D1D9" />
+  <img width="98%" src="./assets/systemd-stats.svg" />
 </a>
 
 <br />

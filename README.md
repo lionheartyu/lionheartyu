@@ -11,7 +11,7 @@
 <br />
 
 <a href="https://github.com/systemd/systemd/pulls?q=is%3Apr+is%3Amerged+author%3Alionheartyu">
-  <img width="98%" src="https://capsule-render.vercel.app/api?type=rect&color=DDF4FF&height=120&section=header&text=systemd%20Contributions&fontSize=26&fontColor=0969DA&desc=Merged%20PRs%3A%2062%20%20%20%20Commits%3A%20110&descSize=18&descAlignY=68&descColor=24292F" />
+  <img width="98%" src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=120&section=header&text=systemd%20Contributions&fontSize=26&fontColor=58A6FF&desc=Merged%20PRs%3A%2062%20%20%7C%20%20Commits%3A%20110&descSize=18&descAlignY=68&descColor=C9D1D9" />
 </a>
 
 <br />

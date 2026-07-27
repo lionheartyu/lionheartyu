@@ -8,10 +8,6 @@
 <br />
 <br />
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1F6FEB,100:0D1117&height=80&section=footer" />
-
-</div>
-
 <br />
 
 ### systemd Contributions
@@ -24,6 +20,11 @@
     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fcommits%3Fq%3Drepo%253Asystemd%252Fsystemd%2520author%253Alionheartyu&query=%24.total_count&label=systemd%20commits&style=for-the-badge&logo=git&color=238636&labelColor=0d1117&cacheSeconds=3600" />
   </a>
 </p>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1F6FEB,100:0D1117&height=80&section=footer" />
+
+</div>
+
 <!--
 **lionheartyu/lionheartyu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

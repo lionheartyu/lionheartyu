@@ -1,0 +1,114 @@
+name: Update README stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats SVGs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          USERNAME: lionheartyu
+        run: |
+          set -euo pipefail
+
+          mkdir -p assets
+
+          user_json=$(curl -fsSL \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/users/$USERNAME")
+
+          repos_json=$(curl -fsSL \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/users/$USERNAME/repos?per_page=100&type=owner&sort=updated")
+
+          total_prs=$(curl -fsSL -G \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            --data-urlencode "q=is:pr author:$USERNAME" \
+            https://api.github.com/search/issues | jq -r '.total_count')
+
+          merged_prs=$(curl -fsSL -G \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            --data-urlencode "q=is:pr is:merged author:$USERNAME" \
+            https://api.github.com/search/issues | jq -r '.total_count')
+
+          systemd_prs=$(curl -fsSL -G \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            --data-urlencode "q=repo:systemd/systemd is:pr is:merged author:$USERNAME" \
+            https://api.github.com/search/issues | jq -r '.total_count')
+
+          systemd_commits=$(curl -fsSL -G \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            --data-urlencode "q=repo:systemd/systemd author:$USERNAME" \
+            https://api.github.com/search/commits | jq -r '.total_count')
+
+          total_commits=$(curl -fsSL -G \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            --data-urlencode "q=author:$USERNAME" \
+            https://api.github.com/search/commits | jq -r '.total_count')
+
+          merged_rate="0"
+          if [ "$total_prs" -gt 0 ]; then
+            merged_rate=$(awk "BEGIN { printf \"%.2f\", $merged_prs * 100 / $total_prs }")
+          fi
+
+          cat > assets/github-stats.svg <<EOF
+          <svg width="420" height="230" viewBox="0 0 420 230" xmlns="http://www.w3.org/2000/svg">
+            <rect width="420" height="230" rx="8" fill="#0D1117"/>
+            <text x="34" y="48" fill="#58A6FF" font-size="24" font-family="Segoe UI, Arial" font-weight="700">PRs &amp; Commits</text>
+            <text x="34" y="92" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="600">Total Commits:</text>
+            <text x="360" y="92" text-anchor="end" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="700">$total_commits</text>
+            <text x="34" y="130" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="600">Total PRs:</text>
+            <text x="360" y="130" text-anchor="end" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="700">$total_prs</text>
+            <text x="34" y="168" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="600">Total PRs Merged:</text>
+            <text x="360" y="168" text-anchor="end" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="700">$merged_prs</text>
+            <text x="34" y="206" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="600">Merged PRs Percentage:</text>
+            <text x="360" y="206" text-anchor="end" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="700">$merged_rate%</text>
+          </svg>
+          EOF
+
+          cat > assets/systemd-stats.svg <<EOF
+          <svg width="860" height="125" viewBox="0 0 860 125" xmlns="http://www.w3.org/2000/svg">
+            <rect width="860" height="125" rx="8" fill="#0D1117"/>
+            <text x="430" y="42" text-anchor="middle" fill="#58A6FF" font-size="26" font-family="Segoe UI, Arial" font-weight="700">systemd Contributions</text>
+            <text x="430" y="82" text-anchor="middle" fill="#C9D1D9" font-size="20" font-family="Segoe UI, Arial" font-weight="600">Merged PRs: $systemd_prs  |  Commits: $systemd_commits</text>
+          </svg>
+          EOF
+
+          cat > assets/top-langs.svg <<EOF
+          <svg width="420" height="230" viewBox="0 0 420 230" xmlns="http://www.w3.org/2000/svg">
+            <rect width="420" height="230" rx="8" fill="#0D1117"/>
+            <text x="34" y="48" fill="#58A6FF" font-size="24" font-family="Segoe UI, Arial" font-weight="700">Top Languages</text>
+            <text x="34" y="105" fill="#C9D1D9" font-size="16" font-family="Segoe UI, Arial">Use GitHub language card below if you want exact language percentages.</text>
+            <text x="34" y="140" fill="#8B949E" font-size="14" font-family="Segoe UI, Arial">This custom Action keeps PR and commit stats fresh.</text>
+          </svg>
+          EOF
+
+      - name: Commit updated SVGs
+        run: |
+          if git diff --quiet; then
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          git commit -m "Update README stats"
+          git push

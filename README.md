@@ -8,10 +8,11 @@
 
 <p align="center">
   <a href="https://github.com/systemd/systemd/pulls?q=is%3Apr+is%3Amerged+author%3Alionheartyu">
-    <img src="https://img.shields.io/github/issues-search/systemd/systemd?query=is%3Apr%20is%3Amerged%20author%3Alionheartyu&label=systemd%20merged%20PRs&style=for-the-badge&logo=github&color=1f6feb&labelColor=0d1117&cacheSeconds=3600" />
+    <img src="https://img.shields.io/github/issues-search/systemd/systemd?query=is%3Apr%20is%3Amerged%20author%3Alionheartyu&label=Merged%20PRs&style=flat&logo=github&logoColor=58A6FF&labelColor=0D1117&color=0D1117&cacheSeconds=3600" />
   </a>
+  &nbsp;
   <a href="https://github.com/search?q=repo%3Asystemd%2Fsystemd+author%3Alionheartyu&type=commits">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fcommits%3Fq%3Drepo%253Asystemd%252Fsystemd%2520author%253Alionheartyu&query=%24.total_count&label=systemd%20commits&style=for-the-badge&logo=git&color=238636&labelColor=0d1117&cacheSeconds=3600" />
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fcommits%3Fq%3Drepo%253Asystemd%252Fsystemd%2520author%253Alionheartyu&query=%24.total_count&label=Commits&style=flat&logo=git&logoColor=58A6FF&labelColor=0D1117&color=0D1117&cacheSeconds=3600" />
   </a>
 </p>
 

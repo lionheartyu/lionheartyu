@@ -4,9 +4,9 @@
   <text x="34" y="92" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="600">Total Commits:</text>
   <text x="360" y="92" text-anchor="end" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="700">506</text>
   <text x="34" y="130" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="600">Total PRs:</text>
-  <text x="360" y="130" text-anchor="end" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="700">127</text>
+  <text x="360" y="130" text-anchor="end" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="700">128</text>
   <text x="34" y="168" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="600">Total PRs Merged:</text>
   <text x="360" y="168" text-anchor="end" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="700">103</text>
   <text x="34" y="206" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="600">Merged PRs Percentage:</text>
-  <text x="360" y="206" text-anchor="end" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="700">81.10%</text>
+  <text x="360" y="206" text-anchor="end" fill="#C9D1D9" font-size="18" font-family="Segoe UI, Arial" font-weight="700">80.47%</text>
 </svg>

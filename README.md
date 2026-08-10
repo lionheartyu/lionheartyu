@@ -1,26 +1,24 @@
-## Hi, I'm Yuan.
-## Focus
+<div align="center">
 
-- Linux userspace
-- system initialization
-- boot optimization
-- service manager behavior
-- low-level debugging
-- open source development
+# Hi, I'm Yuan
+
+**System R&D Engineer · C/C++ Developer · systemd Developer**
+
+I work on Linux userspace, boot performance, service management,  
+and low-level system software.
 
 <br />
 
-<div align="center">
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=lionheartyu&show_icons=true&hide_border=true&bg_color=EAF6FF&title_color=2563EB&text_color=334155&icon_color=38BDF8&ring_color=38BDF8&custom_title=Yuan's%20GitHub%20Stats" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lionheartyu&layout=compact&hide_border=true&bg_color=EAF6FF&title_color=2563EB&text_color=334155&custom_title=Most%20Used%20Languages" />
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=lionheartyu&amp;show_icons=true&amp;hide_border=true&amp;bg_color=EAF4FF&amp;title_color=1F6FEB&amp;text_color=1F2937&amp;icon_color=4EA1FF&amp;ring_color=4EA1FF" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lionheartyu&amp;layout=compact&amp;hide_border=true&amp;bg_color=EAF4FF&amp;title_color=1F6FEB&amp;text_color=1F2937" />
+<br />
+<br />
 
-</div>
+`C` · `C++` · `Linux` · `systemd` · `Boot` · `Debugging` · `Performance`
 
 <br />
 
-<div align="center">
-
-**Building reliable system software, one patch at a time.**
+I like building reliable, practical, and maintainable system software.
 
 </div>

@@ -8,10 +8,6 @@
 - low-level debugging
 - open source development
 
-## Tech Stack
-
-`C` · `C++` · `Linux` · `systemd` · `Debugging` · `Boot` · `Performance`
-
 <br />
 
 <div align="center">

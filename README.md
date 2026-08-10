@@ -1,19 +1,4 @@
-<div align="center">
-
-# Yuan
-
-**System R&D Engineer · C/C++ Developer · systemd Developer**
-
-</div>
-
----
-
 ## Hi, I'm Yuan.
-
-I'm a System R&D Engineer focused on Linux userspace, boot performance, service management, and low-level system behavior.
-
-I mainly work with **C** and **C++**, and I also contribute to **systemd** as a developer.
-
 ## Focus
 
 - Linux userspace

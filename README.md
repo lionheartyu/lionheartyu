@@ -9,13 +9,15 @@ and low-level system software.
 
 <br />
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=lionheartyu&show_icons=true&hide_border=true&bg_color=EAF6FF&title_color=2563EB&text_color=334155&icon_color=38BDF8&ring_color=38BDF8&cache_seconds=86400" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lionheartyu&layout=compact&hide_border=true&bg_color=EAF6FF&title_color=2563EB&text_color=334155&cache_seconds=86400" />
+<img src="https://img.shields.io/badge/C-87CEFA?style=for-the-badge&logo=c&logoColor=1E3A5F&labelColor=EAF6FF" />
+<img src="https://img.shields.io/badge/C++-87CEFA?style=for-the-badge&logo=cplusplus&logoColor=1E3A5F&labelColor=EAF6FF" />
+<img src="https://img.shields.io/badge/Linux-87CEFA?style=for-the-badge&logo=linux&logoColor=1E3A5F&labelColor=EAF6FF" />
+<img src="https://img.shields.io/badge/systemd-87CEFA?style=for-the-badge&logo=linux&logoColor=1E3A5F&labelColor=EAF6FF" />
 
 <br />
 <br />
 
-`C` · `C++` · `Linux` · `systemd` · `Boot` · `Debugging` · `Performance`
+**Linux userspace · Boot optimization · Service management · Low-level debugging**
 
 <br />
 

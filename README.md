@@ -1,4 +1,3 @@
-# Hi, I'm dongshengyuan
 
 I'm a **System Development Engineer** and a **systemd developer**.
 
